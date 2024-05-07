@@ -1,0 +1,29 @@
+.item {
+    color: blue;
+    text-align: center;
+    list-style-type: none;
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.item-list li {
+    background: #fff;
+    box-shadow: 0 1px 3px;
+    padding: 30px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.expense {
+    border-right: 5px solid red;
+}
+
+.income {
+    border-right: 5px solid limegreen;
+}

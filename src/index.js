@@ -1,17 +1,51 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import HelloComponent from './components/HelloComponent';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// ตอนติดตั้งครั้งแรกเขียนแบบนี้มาให้ มันยาว 
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//  <h1>Hello World</h1>
+// );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// const data = ( 
+//   <h1> สวัสดี React</h1>
+// )
+
+// ReactDOM.render(data,document.getElementById('root'));
+
+
+/// สามารถเขียนรวบแบบสั้นๆได้ 
+///  แทรก  tag html ได้ ถ้าใช้ ReactDOM คือ render ให้ใช้กับ Javascript ได้ 
+// ReactDOM.render(<h1>Hello React</h1>,document.getElementById('root'));
+
+// การสร้าง Component
+// function HelloComponent(){
+//   return <h1> Hello Component</h1>
+// }
+
+// ReactDOM.render(<HelloComponent/>,document.getElementById('root'));
+
+// การสร้าง Class Component 
+// class HelloComponent extends React.Component{
+//   render(){
+//     return <h1> Hello Class Component</h1>
+//   }
+
+  
+// }
+
+// ReactDOM.render(<HelloComponent/>,document.getElementById('root'));
+
+
+// การสร้าง External Component 
+// ต้องมีการ import path ของ component มาด้วย
+// ReactDOM.render(<HelloComponent/>,document.getElementById('root'));
+
+
+ReactDOM.render(<App/>,document.getElementById('root'));
+
 reportWebVitals();
